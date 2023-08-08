@@ -2,7 +2,7 @@
     "components": [
         {
             "id": 1,
-            "product_name": "AMD Ryzen 9 5900X",
+            "name": "AMD Ryzen 9 5900X",
             "category": "CPU / Processor",
             "price": "$499",
             "status": "In Stock",
@@ -27,7 +27,7 @@
         },
         {
             "id": 2,
-            "product_name": "Intel Core i9-11900K",
+            "name": "Intel Core i9-11900K",
             "category": "CPU / Processor",
             "price": "$549",
             "status": "In Stock",
@@ -52,7 +52,7 @@
         },
         {
             "id": 3,
-            "product_name": "AMD Ryzen 7 5800X",
+            "name": "AMD Ryzen 7 5800X",
             "category": "CPU / Processor",
             "price": "$399",
             "status": "In Stock",
@@ -77,7 +77,7 @@
         },
         {
             "id": 4,
-            "product_name": "ASUS ROG Strix X570-E Gaming",
+            "name": "ASUS ROG Strix X570-E Gaming",
             "category": "Motherboard",
             "price": "$299",
             "status": "In Stock",
@@ -104,7 +104,7 @@
         },
         {
             "id": 5,
-            "product_name": "GIGABYTE B550 AORUS Pro",
+            "name": "GIGABYTE B550 AORUS Pro",
             "category": "Motherboard",
             "price": "$189",
             "status": "In Stock",
@@ -131,7 +131,7 @@
         },
         {
             "id": 6,
-            "product_name": "MSI MAG B560M Bazooka",
+            "name": "MSI MAG B560M Bazooka",
             "category": "Motherboard",
             "price": "$149",
             "status": "In Stock",
@@ -158,7 +158,7 @@
         },
         {
             "id": 7,
-            "product_name": "Corsair Vengeance RGB Pro 16GB",
+            "name": "Corsair Vengeance RGB Pro 16GB",
             "category": "RAM",
             "price": "$149",
             "status": "In Stock",
@@ -183,7 +183,7 @@
         },
         {
             "id": 8,
-            "product_name": "G.SKILL Trident Z RGB 32GB",
+            "name": "G.SKILL Trident Z RGB 32GB",
             "category": "RAM",
             "price": "$249",
             "status": "In Stock",
@@ -208,7 +208,7 @@
         },
         {
             "id": 9,
-            "product_name": "Corsair Dominator Platinum 32GB",
+            "name": "Corsair Dominator Platinum 32GB",
             "category": "RAM",
             "price": "$129",
             "status": "In Stock",
@@ -233,7 +233,7 @@
         },
         {
             "id": 10,
-            "product_name": "EVGA Supernova 850 G5",
+            "name": "EVGA Supernova 850 G5",
             "category": "Power Supply Unit",
             "price": "$129",
             "status": "In Stock",
@@ -258,7 +258,7 @@
         },
         {
             "id": 11,
-            "product_name": "Corsair RM750x",
+            "name": "Corsair RM750x",
             "category": "Power Supply Unit",
             "price": "$129",
             "status": "In Stock",
@@ -283,7 +283,7 @@
         },
         {
             "id": 12,
-            "product_name": "Antec Signature PLATINUM 1300",
+            "name": "Antec Signature PLATINUM 1300",
             "category": "Power Supply Unit",
             "price": "$109",
             "status": "In Stock",
@@ -308,7 +308,7 @@
         },
         {
             "id": 13,
-            "product_name": "Samsung 970 EVO 1TB NVMe",
+            "name": "Samsung 970 EVO 1TB NVMe",
             "category": "Storage Device",
             "price": "$199",
             "status": "In Stock",
@@ -333,7 +333,7 @@
         },
         {
             "id": 14,
-            "product_name": "Western Digital Blue 500GB SATA SSD",
+            "name": "Western Digital Blue 500GB SATA SSD",
             "category": "Storage Device",
             "price": "$79",
             "status": "In Stock",
@@ -358,7 +358,7 @@
         },
         {
             "id": 15,
-            "product_name": "Seagate BarraCuda 2TB HDD",
+            "name": "Seagate BarraCuda 2TB HDD",
             "category": "Storage Device",
             "price": "$89",
             "status": "In Stock",
@@ -383,7 +383,7 @@
         },
         {
             "id": 16,
-            "product_name": "LG 27GL850-B 32 Inch",
+            "name": "LG 27GL850-B 32 Inch",
             "category": "Monitor",
             "price": "$399",
             "status": "In Stock",
@@ -409,7 +409,7 @@
         },
         {
             "id": 17,
-            "product_name": "ASUS ROG Swift PG279Q 42 Inch",
+            "name": "ASUS ROG Swift PG279Q 42 Inch",
             "category": "Monitor",
             "price": "$699",
             "status": "In Stock",
@@ -435,7 +435,7 @@
         },
         {
             "id": 18,
-            "product_name": "Dell S2721QS 27 Inch",
+            "name": "Dell S2721QS 27 Inch",
             "category": "Monitor",
             "price": "$449",
             "status": "In Stock",
@@ -461,7 +461,7 @@
         },
         {
             "id": 19,
-            "product_name": "NVIDIA GeForce RTX 3080",
+            "name": "NVIDIA GeForce RTX 3080",
             "category": "Others (GPU)",
             "price": "$799",
             "status": "Out of Stock",
@@ -485,7 +485,7 @@
         },
         {
             "id": 20,
-            "product_name": "Logitech G Pro Wireless",
+            "name": "Logitech G Pro Wireless",
             "category": "Others (Mouse)",
             "price": "$149",
             "status": "In Stock",
@@ -509,7 +509,7 @@
         },
         {
             "id": 21,
-            "product_name": "Logitech G PRO Tenkeyless RGB Mechanical Gaming Keyboard",
+            "name": "Logitech G PRO Tenkeyless RGB Mechanical Gaming Keyboard",
             "category": "Others (Keyboard)",
             "price": "$149",
             "status": "In Stock",
