@@ -1,9 +1,9 @@
 import RootLayout from "@/components/layouts/RootLayout";
-import Components from "@/components/layouts/UI/Components";
+import Products from "@/components/UI/Products";
 import Head from "next/head";
 
-export default function Home({ components }) {
-    console.log(components);
+export default function Home({ products }) {
+    console.log(products);
     return (
         <>
             <Head>
@@ -18,7 +18,7 @@ export default function Home({ components }) {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Components components={components}></Components>
+            <Products products={products}></Products>
         </>
     );
 }
@@ -28,12 +28,12 @@ Home.getLayout = function getLayout(page) {
 };
 
 export const getStaticProps = async () => {
-    const res = await fetch("http://localhost:5000/components/");
+    const res = await fetch("http://localhost:5000/products/");
     const data = await res.json();
     console.log(data);
     return {
         props: {
-            components: data,
+            products: data,
         },
     };
 };

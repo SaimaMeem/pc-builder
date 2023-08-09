@@ -61,7 +61,7 @@ const RootLayout = ({ children }) => {
             <Footer
                 style={{
                     textAlign: "center",
-                }}
+                }} className="font-semibold"
             >
                 © 2023 Copyright: PC Builder
             </Footer>
