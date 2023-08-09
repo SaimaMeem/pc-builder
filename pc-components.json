@@ -8,7 +8,7 @@
             "status": "In Stock",
             "image": "https://i.ibb.co/VwL3p56/cpu-1.jpg",
             "description": "The AMD Ryzen 9 5900X is a high-performance 12-core processor designed for gaming and multi-threaded applications.",
-            "key_features": {
+            "features": {
                 "brand": "AMD",
                 "model": "Ryzen 9 5900X",
                 "specification": "12 cores, 24 threads",
@@ -33,7 +33,7 @@
             "status": "In Stock",
             "image": "https://i.ibb.co/3zfR4sg/cpu-2.jpg",
             "description": "The Intel Core i9-11900K is a high-end 8-core processor designed for enthusiasts and gamers.",
-            "key_features": {
+            "features": {
                 "brand": "Intel",
                 "model": "Core i9-11900K",
                 "specification": "8 cores, 16 threads",
@@ -58,7 +58,7 @@
             "status": "In Stock",
             "image": "https://i.ibb.co/R7PC8TT/cpu-3.jpg",
             "description": "The AMD Ryzen 7 5800X is an 8-core processor optimized for high-performance gaming and content creation.",
-            "key_features": {
+            "features": {
                 "brand": "AMD",
                 "model": "Ryzen 7 5800X",
                 "specification": "8 cores, 16 threads",
@@ -83,7 +83,7 @@
             "status": "In Stock",
             "image": "https://i.ibb.co/3c4Nm43/motherboard-1.jpg",
             "description": "The ASUS ROG Strix X570-E Gaming is a high-end motherboard designed for AMD Ryzen processors with PCIe 4.0 support.",
-            "key_features": {
+            "features": {
                 "brand": "ASUS",
                 "model": "ROG Strix X570-E Gaming",
                 "socket": "AM4",
@@ -110,7 +110,7 @@
             "status": "In Stock",
             "image": "https://i.ibb.co/Lzjnnbq/motherboard-2.jpg",
             "description": "The GIGABYTE B550 AORUS Pro is a mid-range motherboard with support for AMD Ryzen processors and PCIe 4.0.",
-            "key_features": {
+            "features": {
                 "brand": "GIGABYTE",
                 "model": "B550 AORUS Pro",
                 "socket": "AM4",
@@ -137,7 +137,7 @@
             "status": "In Stock",
             "image": "https://i.ibb.co/sgL75WZ/motherboard-3.jpg",
             "description": "The MSI MAG B560M Bazooka is a micro-ATX motherboard designed for Intel's 10th and 11th Gen Core processors.",
-            "key_features": {
+            "features": {
                 "brand": "MSI",
                 "model": "MAG B560M Bazooka",
                 "socket": "LGA1200",
@@ -164,7 +164,7 @@
             "status": "In Stock",
             "image": "https://i.ibb.co/s9dGhrZ/ram-1.jpg",
             "description": "Corsair Vengeance RGB Pro is a high-performance DDR4 memory module with vibrant RGB lighting.",
-            "key_features": {
+            "features": {
                 "brand": "Corsair",
                 "model": "Vengeance RGB Pro",
                 "capacity": "16GB (2 x 8GB)",
@@ -189,7 +189,7 @@
             "status": "In Stock",
             "image": "https://i.ibb.co/xXm14Ky/ram-2.jpg",
             "description": "G.SKILL Trident Z RGB is a premium DDR4 memory kit known for its excellent performance and customizable RGB lighting.",
-            "key_features": {
+            "features": {
                 "brand": "G.SKILL",
                 "model": "Trident Z RGB",
                 "capacity": "32GB (2 x 16GB)",
@@ -214,7 +214,7 @@
             "status": "In Stock",
             "image": "https://i.ibb.co/RGKSNw5/ram-3.jpg",
             "description": "Corsair Dominator Platinum is a high-end DDR4 memory kit with a sleek design and superior performance.",
-            "key_features": {
+            "features": {
                 "brand": "Corsair",
                 "model": "Dominator Platinum",
                 "capacity": "32GB (4 x 8GB)",
@@ -239,7 +239,7 @@
             "status": "In Stock",
             "image": "https://i.ibb.co/82DbSc5/psu-1.webp",
             "description": "The EVGA Supernova 850 G5 is a high-quality power supply with 850W output and fully modular cables.",
-            "key_features": {
+            "features": {
                 "brand": "EVGA",
                 "model": "Supernova 850 G5",
                 "wattage": "850W",
@@ -264,7 +264,7 @@
             "status": "In Stock",
             "image": "https://i.ibb.co/wrKd85k/psu-2.jpg",
             "description": "The Corsair RM750x is a reliable power supply with 750W output and a quiet 135mm fan.",
-            "key_features": {
+            "features": {
                 "brand": "Corsair",
                 "model": "RM750x",
                 "wattage": "750W",
@@ -289,7 +289,7 @@
             "status": "In Stock",
             "image": "https://i.ibb.co/2q7dTC2/psu-3.jpg",
             "description": "The Antec Signature PLATINUM 1300 is a high-efficiency power supply with a power output of 1300W.",
-            "key_features": {
+            "features": {
                 "brand": "Antec",
                 "model": "Signature PLATINUM 1300",
                 "wattage": "1300W",
@@ -314,7 +314,7 @@
             "status": "In Stock",
             "image": "https://i.ibb.co/zQz7J9C/sd-1.jpg",
             "description": "The Samsung 970 EVO is a high-speed NVMe SSD with a capacity of 1TB for blazing-fast storage performance.",
-            "key_features": {
+            "features": {
                 "brand": "Samsung",
                 "model": "970 EVO",
                 "capacity": "1TB",
@@ -339,7 +339,7 @@
             "status": "In Stock",
             "image": "https://i.ibb.co/s33B5rs/sd-2.jpg",
             "description": "The Western Digital Blue SATA SSD offers reliable and high-speed storage with a capacity of 500GB.",
-            "key_features": {
+            "features": {
                 "brand": "Western Digital",
                 "model": "Blue SATA SSD",
                 "capacity": "500GB",
@@ -364,7 +364,7 @@
             "status": "In Stock",
             "image": "https://i.ibb.co/XbwXf2v/sd-3.jpg",
             "description": "The Seagate BarraCuda is a spacious 2TB HDD providing ample storage for large files and media.",
-            "key_features": {
+            "features": {
                 "brand": "Seagate",
                 "model": "BarraCuda",
                 "capacity": "2TB",
@@ -389,7 +389,7 @@
             "status": "In Stock",
             "image": "https://i.ibb.co/rvSCdmD/monitor-1.jpg",
             "description": "The LG 27GL850-B is a 32-inch gaming monitor with a high refresh rate and QHD resolution.",
-            "key_features": {
+            "features": {
                 "brand": "LG",
                 "model": "27GL850-B",
                 "display_size": "32-inch",
@@ -415,7 +415,7 @@
             "status": "In Stock",
             "image": "https://i.ibb.co/qdFdyVs/monitor-2.webp",
             "description": "The ASUS ROG Swift PG279Q is a 42-inch gaming monitor with a fast refresh rate and G-Sync support.",
-            "key_features": {
+            "features": {
                 "brand": "ASUS",
                 "model": "ROG Swift PG279Q",
                 "display_size": "42-inch",
@@ -441,7 +441,7 @@
             "status": "In Stock",
             "image": "https://i.ibb.co/HHw5PjK/monitor-3.jpg",
             "description": "The Dell S2721QS is a 27-inch 4K monitor offering stunning visuals and a sleek design.",
-            "key_features": {
+            "features": {
                 "brand": "Dell",
                 "model": "S2721QS",
                 "display_size": "27-inch",
@@ -467,7 +467,7 @@
             "status": "Out of Stock",
             "image": "https://i.ibb.co/QYs8ZfQ/others-1.webp",
             "description": "The NVIDIA GeForce RTX 3080 is a high-end graphics card designed for exceptional gaming and rendering performance.",
-            "key_features": {
+            "features": {
                 "brand": "NVIDIA",
                 "model": "GeForce RTX 3080",
                 "memory": "10GB GDDR6X",
@@ -491,7 +491,7 @@
             "status": "In Stock",
             "image": "https://i.ibb.co/wSSKKJT/others-2.jpg",
             "description": "The Logitech G Pro Wireless is a top-tier gaming mouse with exceptional accuracy and wireless performance.",
-            "key_features": {
+            "features": {
                 "brand": "Logitech",
                 "model": "G Pro Wireless",
                 "connectivity": "Wireless (USB dongle)",
@@ -515,7 +515,7 @@
             "status": "In Stock",
             "image": "https://i.ibb.co/mRW8tW9/others-3.jpg",
             "description": "The Logitech G PRO Tenkeyless RGB Mechanical Gaming Keyboard features responsive Romer-G switches and customizable RGB lighting.",
-            "key_features": {
+            "features": {
                 "brand": "Logitech",
                 "model": "G PRO Tenkeyless",
                 "switch_type": "Romer-G",
