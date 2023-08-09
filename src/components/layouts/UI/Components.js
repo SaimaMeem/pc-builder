@@ -16,10 +16,10 @@ const Components = ({ components }) => {
                     md: 24,
                     lg: 32,
                 }}
-                className="py-6 px-10"
+                className="py-6 md:px-10"
             >
                 {components.slice(15).map((component) => (
-                    <Col key={component.id} className="gutter-row" span={6}>
+                    <Col key={component.id} className="gutter-row py-5" span={6} xs={24} md={12} lg={8} xl={6}>
                         <Card
                             hoverable
                             cover={
