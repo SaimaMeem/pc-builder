@@ -4,8 +4,9 @@ const { Header, Content, Footer } = Layout;
 const RootLayout = ({ children }) => {
     const items = [
         {
-            label: "Home",
-            key: "/",
+            label: (
+                <Link href={"/"}>Home</Link>
+            ),
         },
         {
             label: "Categories",
