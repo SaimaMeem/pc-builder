@@ -51,7 +51,7 @@ const RootLayout = ({ children }) => {
             label: (
                 <Button
                     type="primary"
-                    href="https://www.google.com"
+                    href={"/pc-builder/"}
                     className=""
                 >
                     PC Builder

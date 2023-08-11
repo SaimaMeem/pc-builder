@@ -45,7 +45,7 @@ const ProductDetail = ({ product }) => {
                             <p className="md:text-base">
                                 Individual Rating:{" "}
                                 <span className="font-semibold">
-                                    {product?.average_rating}
+                                    {product?.individual_rating}
                                 </span>
                             </p>
                         </div>
