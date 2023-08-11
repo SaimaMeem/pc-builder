@@ -1,9 +1,8 @@
-import Product from "@/components/UI/Product";
+import ProductCard from "@/components/UI/home/ProductCard";
 import RootLayout from "@/components/layouts/RootLayout";
 import { Row } from "antd";
 
 const Category = ({ filteredProducts }) => {
-    console.log(filteredProducts);
     return (
         <Row
             gutter={{
@@ -15,7 +14,7 @@ const Category = ({ filteredProducts }) => {
             className="py-6 md:px-10"
         >
             {filteredProducts.map((product) => (
-                <Product key={product.id} product={product}></Product>
+                <ProductCard key={product.id} product={product}></ProductCard>
             ))}
         </Row>
     );

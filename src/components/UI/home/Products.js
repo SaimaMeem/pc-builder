@@ -1,5 +1,5 @@
 import { Card, Row } from "antd";
-import Product from "./Product";
+import ProductCard from "./ProductCard";
 
 const Products = ({ products }) => {
     const { Meta } = Card;
@@ -18,7 +18,10 @@ const Products = ({ products }) => {
                 className="py-6 md:px-10"
             >
                 {products.slice(15).map((product) => (
-                    <Product key={product.id} product={product}></Product>
+                    <ProductCard
+                        key={product.id}
+                        product={product}
+                    ></ProductCard>
                 ))}
             </Row>
         </>

@@ -1,7 +1,7 @@
 import { Button, Card, Col } from "antd";
 import Image from "next/image";
 import Link from "next/link";
-const Product = ({product}) => {
+const ProductCard = ({product}) => {
     const { Meta } = Card;
     return (
         <Col
@@ -55,4 +55,4 @@ const Product = ({product}) => {
     );
 };
 
-export default Product;
+export default ProductCard;

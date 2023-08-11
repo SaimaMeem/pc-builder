@@ -1,6 +1,6 @@
 import RootLayout from "@/components/layouts/RootLayout";
-import Categories from "@/components/UI/Categories";
-import Products from "@/components/UI/Products";
+import Categories from "@/components/UI/home/Categories";
+import Products from "@/components/UI/home/Products";
 import Head from "next/head";
 
 export default function Home({ products }) {
