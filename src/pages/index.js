@@ -4,7 +4,6 @@ import Products from "@/components/UI/Products";
 import Head from "next/head";
 
 export default function Home({ products }) {
-    console.log(products);
     return (
         <>
             <Head>
@@ -32,7 +31,6 @@ Home.getLayout = function getLayout(page) {
 export const getStaticProps = async () => {
     const res = await fetch("http://localhost:5000/products/");
     const data = await res.json();
-    console.log(data);
     return {
         props: {
             products: data,

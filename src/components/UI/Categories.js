@@ -50,7 +50,7 @@ const Categories = () => {
                 <Col span={6} className="py-2">
                     <Card bordered={false}>
                         {" "}
-                        <Link href={"/categories/others"}>Other</Link>
+                        <Link href={"/categories/others"}>Others</Link>
                     </Card>
                 </Col>
             </Row>

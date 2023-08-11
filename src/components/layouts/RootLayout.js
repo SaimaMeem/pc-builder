@@ -43,7 +43,7 @@ const RootLayout = ({ children }) => {
                     label: <Link href={"/categories/monitor"}>Monitor</Link>,
                 },
                 {
-                    label: <Link href={"/categories/others"}>Other</Link>,
+                    label: <Link href={"/categories/others"}>Others</Link>,
                 },
             ],
         },
