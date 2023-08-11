@@ -1,12 +1,10 @@
-import { Layout, Menu, theme } from "antd";
+import { Button, Layout, Menu } from "antd";
 import Link from "next/link";
 const { Header, Content, Footer } = Layout;
 const RootLayout = ({ children }) => {
     const items = [
         {
-            label: (
-                <Link href={"/"}>Home</Link>
-            ),
+            label: <Link href={"/"}>Home</Link>,
         },
         {
             label: "Categories",
@@ -19,15 +17,46 @@ const RootLayout = ({ children }) => {
                 },
                 {
                     label: (
-                        <Link href={"/categories/motherboard"}>Motherboard</Link>
+                        <Link href={"/categories/motherboard"}>
+                            Motherboard
+                        </Link>
+                    ),
+                },
+                {
+                    label: <Link href={"/categories/ram"}>RAM</Link>,
+                },
+                {
+                    label: (
+                        <Link href={"/categories/power-supply-unit"}>
+                            Power Supply Unit
+                        </Link>
                     ),
                 },
                 {
                     label: (
-                        <Link href={"/categories/ram"}>RAM</Link>
+                        <Link href={"/categories/storage-device"}>
+                            Storage Device
+                        </Link>
                     ),
                 },
+                {
+                    label: <Link href={"/categories/monitor"}>Monitor</Link>,
+                },
+                {
+                    label: <Link href={"/categories/others"}>Other</Link>,
+                },
             ],
+        },
+        {
+            label: (
+                <Button
+                    type="primary"
+                    href="https://www.google.com"
+                    className=""
+                >
+                    PC Builder
+                </Button>
+            ),
         },
     ];
 
@@ -39,7 +68,8 @@ const RootLayout = ({ children }) => {
                     alignItems: "center",
                     justifyContent: "center",
                     backgroundColor: "white",
-                }} className="shadow-lg"
+                }}
+                className="shadow-lg"
             >
                 <div className="demo-logo" />
                 <Menu
@@ -51,18 +81,16 @@ const RootLayout = ({ children }) => {
             <Content
                 style={{
                     minHeight: "100vh",
-                }} className="md:px-10"
+                }}
+                className="md:px-10"
             >
-                <div
-                    className="site-layout-content"
-                >
-                    {children}
-                </div>
+                <div className="site-layout-content">{children}</div>
             </Content>
             <Footer
                 style={{
                     textAlign: "center",
-                }} className="font-semibold"
+                }}
+                className="font-semibold"
             >
                 © 2023 Copyright: PC Builder
             </Footer>

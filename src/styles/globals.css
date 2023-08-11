@@ -10,3 +10,11 @@
 header li {
     font-size: 16px !important;
 }
+
+span>a>span {
+    color: #ffffff !important;
+}
+
+.categories{
+    background-color: transparent !important;
+}

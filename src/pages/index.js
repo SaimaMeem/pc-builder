@@ -1,4 +1,5 @@
 import RootLayout from "@/components/layouts/RootLayout";
+import Categories from "@/components/UI/Categories";
 import Products from "@/components/UI/Products";
 import Head from "next/head";
 
@@ -18,6 +19,7 @@ export default function Home({ products }) {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
+            <Categories />
             <Products products={products}></Products>
         </>
     );
