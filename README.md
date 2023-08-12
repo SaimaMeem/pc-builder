@@ -1,38 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# PC Builder Website
+The PC Builder Website is a user-friendly platform developed with Next.js that enables users to assemble their personalized PCs. It includes a PC Builder tool, product categories, featured components, and authentication features for an enhanced experience.
 
-## Getting Started
+## Features
 
-First, run the development server:
+### Authentication
+- Google Authentication implemented with NextAuth.
+- Email-Password Authentication implemented with Firebase.
+- Protected PC Builder page with user authentication using NextAuth.
 
-```bash
+### Navigation
+- Navbar with a "PC Builder" button that redirects users to the PC Builder page.
+- Categories dropdown with various component categories (CPU, Motherboard, RAM, etc.), each linked to a corresponding route.
+
+### Home Page
+- Utilizes SSG (Static Site Generation) to display 6 random Featured Products.
+- Each Featured Product card displays essential information like image, product name, category, price, availability, rating, and a clickable link to the product detail page.
+- Featured Categories showcase different product categories with links.
+
+### Featured Category Section
+- Each Featured Category is clickable and leads to a page displaying at least 3 products from that category.
+- Product cards on these pages show details like image, name, category, price, availability, rating, and are clickable for more information.
+
+### Product Detail Page
+- Detailed page for each PC component with information like image, product name, category, availability, price, description, key features, individual rating, average rating, and reviews.
+
+
+### PC Builder Page
+- Implemented with SSR (Server-Side Rendering).
+- Category sections (CPU, Motherboard, RAM, etc.) with "Select" buttons.
+- Clicking on "Select" buttons leads to a page with at least 3 components of that category.
+- Component cards show relevant information and have an "Add to Builder" button.
+- Selected components are added to the PC Builder page.
+- Complete Build button that becomes active after adding at least 5-6 components.
+- Success alert when the Complete Build button is clicked.
+
+
+## How to Run the Project
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Install dependencies using npm or yarn.
+```
 npm run dev
 # or
 yarn dev
+```
+4. Create a .env file in the project root and add your environment variables.
+``` 
+NEXTAUTH_URL=http://localhost:3000
+GOOGLE_CLIENT_ID=your_google_client_id
+GITHUB_CLIENT_ID=your_github_client_id 
+```
+5. Run the development server.
+``` 
+npm run dev
 # or
-pnpm dev
+yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
