@@ -1,14 +1,24 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+import auth from "@/firebase/firebase.auth";
 import { GoogleOutlined } from "@ant-design/icons";
 import { Button, Divider, Form, Input } from "antd";
 import { signIn } from "next-auth/react";
-const onFinish = (values) => {
-    console.log("Success:", values);
-};
-const onFinishFailed = (errorInfo) => {
-    console.log("Failed:", errorInfo);
-};
+import { useRouter } from "next/router";
+import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 
 const login = () => {
+    const [signInWithEmailAndPassword, user, loading, error] =
+        useSignInWithEmailAndPassword(auth);
+    const router = useRouter();
+    const onFinish = async (values) => {
+        await signInWithEmailAndPassword(values.email, values.password);
+    };
+    if (user) {
+        router.push("/");
+    }
+    const onFinishFailed = (errorInfo) => {
+        // console.log("Failed:", errorInfo);
+    };
     return (
         <div className="justify-center my-32 mx-auto sm:w-1/2 border-4 bg-[#F5F5F5]">
             <div className="mx-16 md:mx-10">
@@ -29,12 +39,12 @@ const login = () => {
                     autoComplete="off"
                 >
                     <Form.Item
-                        label="Username"
-                        name="username"
+                        label="Email Address"
+                        name="email"
                         rules={[
                             {
                                 required: true,
-                                message: "Please input your username!",
+                                message: "Please enter your Email Address!",
                             },
                         ]}
                     >
@@ -47,7 +57,7 @@ const login = () => {
                         rules={[
                             {
                                 required: true,
-                                message: "Please input your password!",
+                                message: "Please enter your password!",
                             },
                         ]}
                     >
@@ -61,7 +71,7 @@ const login = () => {
                         }}
                     >
                         <Button type="primary" htmlType="submit">
-                            Submit
+                            Submit{" "}
                         </Button>
                     </Form.Item>
                 </Form>

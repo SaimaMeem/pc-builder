@@ -1,10 +1,22 @@
+import auth from "@/firebase/firebase.auth";
 import { CaretDownOutlined } from "@ant-design/icons";
 import { Button, Layout, Menu } from "antd";
-import { signOut, useSession } from "next-auth/react";
+import { signOut as nSignOut, useSession } from "next-auth/react";
 import Link from "next/link";
+import { useAuthState, useSignOut } from "react-firebase-hooks/auth";
 const { Header, Content, Footer } = Layout;
 const RootLayout = ({ children }) => {
     const { data: session } = useSession();
+    const [user, loading, error] = useAuthState(auth);
+    const [signOut] = useSignOut(auth);
+
+    const logOut = async () => {
+        if (session?.user) {
+            await nSignOut();
+        } else {
+            await signOut();
+        }
+    };
     const items = [
         {
             label: <Link href={"/"}>Home</Link>,
@@ -59,11 +71,13 @@ const RootLayout = ({ children }) => {
             ),
         },
     ];
-    if (session?.user) {
+    if (session?.user || user?.email) {
         items.push({
             label: (
                 <div className="flex justify-center items-center space-x-2">
-                    <span>{session?.user?.name}</span>{" "}
+                    <span>
+                        {session?.user?.name || user?.email.split("@")[0]}
+                    </span>{" "}
                     <span className="hidden md:block">
                         <CaretDownOutlined />
                     </span>
@@ -77,7 +91,7 @@ const RootLayout = ({ children }) => {
                         <Link
                             href={"/"}
                             className="text-center"
-                            onClick={() => signOut()}
+                            onClick={() => logOut()}
                         >
                             Log Out
                         </Link>

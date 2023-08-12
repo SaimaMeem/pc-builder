@@ -22,3 +22,7 @@ span>a>span {
 .ant-divider {
     border-block: gray !important;
 }
+
+.ant-form-item-control{
+    padding-bottom: 10px !important;
+}
