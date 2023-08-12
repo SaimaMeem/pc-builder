@@ -15,6 +15,10 @@ span>a>span {
     color: #ffffff !important;
 }
 
-.categories{
+.categories {
     background-color: transparent !important;
+}
+
+.ant-divider {
+    border-block: gray !important;
 }
