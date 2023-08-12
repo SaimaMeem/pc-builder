@@ -1,10 +1,14 @@
+import { CaretDownOutlined } from "@ant-design/icons";
 import { Button, Layout, Menu } from "antd";
+import { signOut, useSession } from "next-auth/react";
 import Link from "next/link";
 const { Header, Content, Footer } = Layout;
 const RootLayout = ({ children }) => {
+    const { data: session } = useSession();
     const items = [
         {
             label: <Link href={"/"}>Home</Link>,
+            key: "",
         },
         {
             label: "Categories",
@@ -49,16 +53,47 @@ const RootLayout = ({ children }) => {
         },
         {
             label: (
-                <Button
-                    type="primary"
-                    href={"/pc-builder/"}
-                    className=""
-                >
+                <Button type="primary" href={"/pc-builder/"} className="">
                     PC Builder
                 </Button>
             ),
         },
     ];
+    if (session?.user) {
+        items.push({
+            label: (
+                <div className="flex justify-center items-center space-x-2">
+                    <span>{session?.user?.name}</span>{" "}
+                    <span className="hidden md:block">
+                        <CaretDownOutlined />
+                    </span>
+                </div>
+            ),
+            key: "SubMenu2",
+
+            children: [
+                {
+                    label: (
+                        <Link
+                            href={"/"}
+                            className="text-center"
+                            onClick={() => signOut()}
+                        >
+                            Log Out
+                        </Link>
+                    ),
+                },
+            ],
+        });
+    } else {
+        items.push({
+            label: (
+                <Link type="primary" href={"/login"} className="">
+                    Login
+                </Link>
+            ),
+        });
+    }
 
     return (
         <Layout className="layout">
@@ -76,6 +111,10 @@ const RootLayout = ({ children }) => {
                     className="w-full flex justify-center font-medium"
                     mode="horizontal"
                     items={items}
+                    placement="bottomLeft"
+                    arrow={{
+                        pointAtCenter: true,
+                    }}
                 />
             </Header>
             <Content

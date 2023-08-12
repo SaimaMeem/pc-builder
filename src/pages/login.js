@@ -1,5 +1,6 @@
 import { GoogleOutlined } from "@ant-design/icons";
 import { Button, Divider, Form, Input } from "antd";
+import { signIn } from "next-auth/react";
 const onFinish = (values) => {
     console.log("Success:", values);
 };
@@ -65,7 +66,14 @@ const login = () => {
                     </Form.Item>
                 </Form>
                 <Divider>OR</Divider>
-                <div className="flex justify-center items-center my-10 space-x-1 py-2 border-2 cursor-pointer hover:text-red-700 hover:rounded-lg hover:border-red-700 hover:ease-out hover:duration-500">
+                <div
+                    className="flex justify-center items-center my-10 space-x-1 py-2 border-2 cursor-pointer hover:text-red-700 hover:rounded-lg hover:border-red-700 hover:ease-out hover:duration-500"
+                    onClick={() =>
+                        signIn("google", {
+                            callbackUrl: "http://localhost:3000/",
+                        })
+                    }
+                >
                     <GoogleOutlined />
                     <span className="text-xs md:text-base">
                         Continue with Google

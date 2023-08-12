@@ -37,9 +37,9 @@ const Categories = () => {
             <h1 className="font-semibold text-3xl text-center my-10">
                 Featured Categories
             </h1>
-            <Row gutter={16} className="text-center font-semibold">
+            <Row gutter={16} className="text-center font-semibold w-full">
                 {categories.map((category) => (
-                    <Col key={category.label} span={6} className="py-2">
+                    <Col key={category.label} span={6} xs={12} className="py-2">
                         <Card bordered={false}>
                             {" "}
                             <Link href={category.link}>{category.label}</Link>

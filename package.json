@@ -10,6 +10,7 @@
     "json-server": "json-server --watch pc-components.json --port 5000"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.2.5",
     "@reduxjs/toolkit": "^1.9.5",
     "antd": "^5.8.2",
     "autoprefixer": "10.4.14",
@@ -17,9 +18,11 @@
     "eslint-config-next": "13.4.12",
     "json-server": "^0.17.3",
     "next": "13.4.12",
+    "next-auth": "^4.23.0",
     "postcss": "8.4.27",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.45.4",
     "react-redux": "^8.1.2",
     "tailwindcss": "3.3.3"
   }
