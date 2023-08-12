@@ -11,7 +11,7 @@ const contentStyle = {
 };
 const Banner = () => {
     const onChange = (currentSlide) => {
-        console.log(currentSlide);
+        // console.log(currentSlide);
     };
     return (
         <Carousel afterChange={onChange}>

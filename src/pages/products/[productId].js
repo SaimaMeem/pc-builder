@@ -17,7 +17,6 @@ export const getStaticPaths = async () => {
     const paths = products.map((product) => ({
         params: { productId: product.id },
     }));
-    console.log("======================",paths);
     return {
         paths,
         fallback: false,
@@ -26,7 +25,6 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
     const { params } = context;
-    console.log("++++++++++++++++++++++++",params);
     const res = await fetch(
         `http://localhost:5000/products/${params.productId}`
     );
