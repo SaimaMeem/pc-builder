@@ -21,7 +21,7 @@ const ProductCard = ({product}) => {
                         src={product?.image}
                         width={350}
                         height={350}
-                        responsive
+                        responsive="true"
                         alt="product image"
                         className="p-6"
                     />
