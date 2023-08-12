@@ -52,7 +52,7 @@ const ProductCard = ({ product, category }) => {
                         <Button
                             type="primary"
                             onClick={() => {
-                                handleAddToBuild(category, product?.name);
+                                handleAddToBuild(category, product);
                             }}
                         >
                             Add to Build
