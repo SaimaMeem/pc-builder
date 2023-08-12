@@ -462,7 +462,7 @@
         {
             "id": 19,
             "name": "NVIDIA GeForce RTX 3080",
-            "category": "Others (GPU)",
+            "category": "Others",
             "price": "$799",
             "status": "Out of Stock",
             "image": "https://i.ibb.co/QYs8ZfQ/others-1.webp",
@@ -486,7 +486,7 @@
         {
             "id": 20,
             "name": "Logitech G Pro Wireless",
-            "category": "Others (Mouse)",
+            "category": "Others",
             "price": "$149",
             "status": "In Stock",
             "image": "https://i.ibb.co/wSSKKJT/others-2.jpg",
@@ -510,7 +510,7 @@
         {
             "id": 21,
             "name": "Logitech G PRO Tenkeyless RGB Mechanical Gaming Keyboard",
-            "category": "Others (Keyboard)",
+            "category": "Others",
             "price": "$149",
             "status": "In Stock",
             "image": "https://i.ibb.co/mRW8tW9/others-3.jpg",

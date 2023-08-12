@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 const PCBuilder = () => {
     const categories = [
         {
-            label: "CPU / Processer",
+            label: "CPU / Processor",
             link: "/pc-builder/cpu",
         },
         {

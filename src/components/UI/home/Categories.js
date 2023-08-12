@@ -4,7 +4,7 @@ import Link from "next/link";
 const Categories = () => {
     const categories = [
         {
-            label: "CPU / Processer",
+            label: "CPU / Processor",
             link: "/categories/cpu",
         },
         {
