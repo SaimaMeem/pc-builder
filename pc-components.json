@@ -1,7 +1,7 @@
 {
     "products": [
         {
-            "id": 1,
+            "id": "1",
             "name": "AMD Ryzen 9 5900X",
             "category": "CPU / Processor",
             "price": "$499",
@@ -26,7 +26,7 @@
             ]
         },
         {
-            "id": 2,
+            "id": "2",
             "name": "Intel Core i9-11900K",
             "category": "CPU / Processor",
             "price": "$549",
@@ -51,7 +51,7 @@
             ]
         },
         {
-            "id": 3,
+            "id": "3",
             "name": "AMD Ryzen 7 5800X",
             "category": "CPU / Processor",
             "price": "$399",
@@ -76,7 +76,7 @@
             ]
         },
         {
-            "id": 4,
+            "id": "4",
             "name": "ASUS ROG Strix X570-E Gaming",
             "category": "Motherboard",
             "price": "$299",
@@ -103,7 +103,7 @@
             ]
         },
         {
-            "id": 5,
+            "id": "5",
             "name": "GIGABYTE B550 AORUS Pro",
             "category": "Motherboard",
             "price": "$189",
@@ -130,7 +130,7 @@
             ]
         },
         {
-            "id": 6,
+            "id": "6",
             "name": "MSI MAG B560M Bazooka",
             "category": "Motherboard",
             "price": "$149",
@@ -157,7 +157,7 @@
             ]
         },
         {
-            "id": 7,
+            "id": "7",
             "name": "Corsair Vengeance RGB Pro 16GB",
             "category": "RAM",
             "price": "$149",
@@ -182,7 +182,7 @@
             ]
         },
         {
-            "id": 8,
+            "id": "8",
             "name": "G.SKILL Trident Z RGB 32GB",
             "category": "RAM",
             "price": "$249",
@@ -207,7 +207,7 @@
             ]
         },
         {
-            "id": 9,
+            "id": "9",
             "name": "Corsair Dominator Platinum 32GB",
             "category": "RAM",
             "price": "$129",
@@ -232,7 +232,7 @@
             ]
         },
         {
-            "id": 10,
+            "id": "10",
             "name": "EVGA Supernova 850 G5",
             "category": "Power Supply Unit",
             "price": "$129",
@@ -257,7 +257,7 @@
             ]
         },
         {
-            "id": 11,
+            "id": "11",
             "name": "Corsair RM750x",
             "category": "Power Supply Unit",
             "price": "$129",
@@ -282,7 +282,7 @@
             ]
         },
         {
-            "id": 12,
+            "id": "12",
             "name": "Antec Signature PLATINUM 1300",
             "category": "Power Supply Unit",
             "price": "$109",
@@ -307,7 +307,7 @@
             ]
         },
         {
-            "id": 13,
+            "id": "13",
             "name": "Samsung 970 EVO 1TB NVMe",
             "category": "Storage Device",
             "price": "$199",
@@ -332,7 +332,7 @@
             ]
         },
         {
-            "id": 14,
+            "id": "14",
             "name": "Western Digital Blue 500GB SATA SSD",
             "category": "Storage Device",
             "price": "$79",
@@ -357,7 +357,7 @@
             ]
         },
         {
-            "id": 15,
+            "id": "15",
             "name": "Seagate BarraCuda 2TB HDD",
             "category": "Storage Device",
             "price": "$89",
@@ -382,7 +382,7 @@
             ]
         },
         {
-            "id": 16,
+            "id": "16",
             "name": "LG 27GL850-B 32 Inch",
             "category": "Monitor",
             "price": "$399",
@@ -408,7 +408,7 @@
             ]
         },
         {
-            "id": 17,
+            "id": "17",
             "name": "ASUS ROG Swift PG279Q 42 Inch",
             "category": "Monitor",
             "price": "$699",
@@ -434,7 +434,7 @@
             ]
         },
         {
-            "id": 18,
+            "id": "18",
             "name": "Dell S2721QS 27 Inch",
             "category": "Monitor",
             "price": "$449",
@@ -460,7 +460,7 @@
             ]
         },
         {
-            "id": 19,
+            "id": "19",
             "name": "NVIDIA GeForce RTX 3080",
             "category": "Others",
             "price": "$799",
@@ -484,7 +484,7 @@
             ]
         },
         {
-            "id": 20,
+            "id": "20",
             "name": "Logitech G Pro Wireless",
             "category": "Others",
             "price": "$149",
@@ -508,7 +508,7 @@
             ]
         },
         {
-            "id": 21,
+            "id": "21",
             "name": "Logitech G PRO Tenkeyless RGB Mechanical Gaming Keyboard",
             "category": "Others",
             "price": "$149",
