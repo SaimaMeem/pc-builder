@@ -1,9 +1,18 @@
+import { addToBuild } from "@/redux/pcBuilderSlice";
 import { Button } from "antd";
-const ProductCard = ({ product }) => {
+import { useRouter } from "next/router";
+import { useDispatch } from "react-redux";
+const ProductCard = ({ product, category }) => {
+    const dispatch = useDispatch();
+    const router = useRouter();
+    const handleAddToBuild = (category, product) => {
+        dispatch(addToBuild({ [category]: product }));
+        router.push("/pc-builder/");
+    };
     return (
         <div className="flex flex-col max-w-7xl mx-auto items-start justify-center w-[100%] bg-white my-10 shadow-lg px-5">
-            <div className="flex flex-col lg:flex-row items-center justify-center lg:space-x-16">
-                <div className="w-1/5">
+            <div className="flex flex-col md:flex-row items-center justify-center lg:space-x-16">
+                <div className="w-1/2 md:w-1/5">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                         src={product?.image}
@@ -11,8 +20,8 @@ const ProductCard = ({ product }) => {
                         className=""
                     />
                 </div>
-                <div className="flex justify-between lg:w-[100%] space-y-3 py-10">
-                    <div>
+                <div className="flex flex-col md:flex-row justify-between lg:w-[100%] space-y-3 py-10">
+                    <div className="md:w-[30rem]">
                         <h1 className="text-xl font-semibold">
                             {product?.name}
                         </h1>
@@ -42,8 +51,9 @@ const ProductCard = ({ product }) => {
                         </p>
                         <Button
                             type="primary"
-                            href={"/pc-builder/"}
-                            className=""
+                            onClick={() => {
+                                handleAddToBuild(category, product?.name);
+                            }}
                         >
                             Add to Build
                         </Button>

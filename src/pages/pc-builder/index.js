@@ -1,6 +1,7 @@
 import RootLayout from "@/components/layouts/RootLayout";
 import { Button, Card, Col, Row } from "antd";
 import Link from "next/link";
+import { useSelector } from "react-redux";
 const PCBuilder = () => {
     const categories = [
         {
@@ -32,6 +33,19 @@ const PCBuilder = () => {
             link: "/pc-builder/others",
         },
     ];
+    const selectedCategories = useSelector(
+        (state) => state.pcBuilder.categories
+    );
+    let selectedCategoryKeys = [];
+    let selectedCategoryValues = [];
+
+    selectedCategories.forEach((obj) => {
+        selectedCategoryKeys = selectedCategoryKeys.concat(Object.keys(obj));
+        selectedCategoryValues = selectedCategoryValues.concat(Object.values(obj));
+    });
+    console.log(selectedCategoryKeys);
+    console.log(selectedCategories);
+    console.log(selectedCategoryValues);
     return (
         <div className="mt-10">
             <h1 className="font-semibold text-3xl text-center my-10">
@@ -46,16 +60,26 @@ const PCBuilder = () => {
                         <Card>
                             <div className="flex justify-between px-4">
                                 <h4>{category.label}</h4>
-                                <Link
-                                    href={category.link}
-                                    className="font-semibold"
-                                >
-                                    Select
-                                </Link>
+                                {!selectedCategoryKeys.includes(
+                                    category.label
+                                ) && (
+                                    <Link
+                                        href={category.link}
+                                        className="font-semibold"
+                                    >
+                                        Select
+                                    </Link>
+                                )}
                             </div>
-                            {/* <div className="mt-4">
-                                <Card type="inner">Inner Card content</Card>
-                            </div> */}
+                            {selectedCategoryKeys.includes(category.label) && (
+                                <div className="mt-4">
+                                    <Card type="inner">
+                                        {
+                                            selectedCategories.find(obj => obj.hasOwnProperty(category.label))[category.label]
+                                            }
+                                    </Card>
+                                </div>
+                            )}
                         </Card>
                     </Col>
                 ))}

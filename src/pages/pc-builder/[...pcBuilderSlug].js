@@ -1,12 +1,14 @@
 import ProductCard from "@/components/UI/PCBuilder/ProductCard";
 import RootLayout from "@/components/layouts/RootLayout";
 import { Row } from "antd";
-
+function convertToSpaceSeparated(input) {
+    return input.replace(/-/g, " ");
+}
 const Category = ({ filteredProducts, category }) => {
-    console.log(category);
     return (
         <>
             <h1 className="text-3xl font-semibold text-center mt-10">
+                {/* {filteredProducts[0]?.category} */}
                 {category}
             </h1>
             <Row
@@ -22,6 +24,7 @@ const Category = ({ filteredProducts, category }) => {
                     <ProductCard
                         key={product.id}
                         product={product}
+                        category={category}
                     ></ProductCard>
                 ))}
             </Row>
@@ -40,11 +43,14 @@ export const getServerSideProps = async (context) => {
     const res = await fetch(`http://localhost:5000/products/`);
     const data = await res.json();
     const filteredData = data.filter((product) =>
-        product.category.toLowerCase().includes(params.pcBuilderSlug[0])
+        product.category
+            .toLowerCase()
+            .includes(convertToSpaceSeparated(params.pcBuilderSlug[0]))
     );
     return {
         props: {
             filteredProducts: filteredData,
+            // category: params.pcBuilderSlug[0],
             category: filteredData[0].category,
         },
         // revalidate: 5,

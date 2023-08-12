@@ -1,5 +1,5 @@
 const ProductDetail = ({ product }) => {
-    const capitalizeWords = (string) => {
+    const covertToTitleCase = (string) => {
         return string.replace(/_/g, " ").replace(/(^|\s)\S/g, function (match) {
             return match.toUpperCase();
         });
@@ -65,7 +65,7 @@ const ProductDetail = ({ product }) => {
                         {Object.keys(product?.features).map((feature) => (
                             <li key={feature}>
                                 <span className="font-semibold text-gray-500">
-                                    {capitalizeWords(feature)}
+                                    {covertToTitleCase(feature)}
                                 </span>
                                 :{" "}
                                 <span className="text-base">
