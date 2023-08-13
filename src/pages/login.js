@@ -80,7 +80,8 @@ const login = () => {
                     className="flex justify-center items-center my-10 space-x-1 py-2 border-2 cursor-pointer hover:text-red-700 hover:rounded-lg hover:border-red-700 hover:ease-out hover:duration-500"
                     onClick={() =>
                         signIn("google", {
-                            callbackUrl: "http://localhost:3000",
+                            callbackUrl:
+                                "https://pc-builder-saimameem.vercel.app",
                         })
                     }
                 >
