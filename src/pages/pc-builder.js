@@ -7,31 +7,31 @@ const PCBuilder = () => {
     const categories = [
         {
             label: "CPU / Processor",
-            link: "/pc-builder/cpu",
+            link: "/categories/cpu",
         },
         {
             label: "Motherboard",
-            link: "/pc-builder/motherboard",
+            link: "/categories/motherboard",
         },
         {
             label: "RAM",
-            link: "/pc-builder/ram",
+            link: "/categories/ram",
         },
         {
             label: "Power Supply Unit",
-            link: "/pc-builder/power-supply-unit",
+            link: "/categories/power-supply-unit",
         },
         {
             label: "Storage Device",
-            link: "/pc-builder/storage-device",
+            link: "/categories/storage-device",
         },
         {
             label: "Monitor",
-            link: "/pc-builder/monitor",
+            link: "/categories/monitor",
         },
         {
             label: "Others",
-            link: "/pc-builder/others",
+            link: "/categories/others",
         },
     ];
     const selectedCategories = useSelector(

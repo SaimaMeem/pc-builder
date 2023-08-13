@@ -14,7 +14,7 @@ const login = () => {
         await signInWithEmailAndPassword(values.email, values.password);
     };
     if (user) {
-        router.push(router?.query?.callbackUrl || "/");
+        router.push("/");
     }
     const onFinishFailed = (errorInfo) => {
         // console.log("Failed:", errorInfo);
