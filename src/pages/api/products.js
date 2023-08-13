@@ -15,13 +15,12 @@ async function run(req, res) {
         // Connect the client to the server	(optional starting in v4.7)
         await client.connect();
         // Send a ping to confirm a successful connection
-        console.log("database connection established");
+        // console.log("database connection established");
 
         const productsCollection = await client
             .db("pc-builder")
             .collection("products");
         if (req.method === "GET") {
-            console.log(req.url);
             const products = await productsCollection.find({}).toArray();
             res.send({ message: "success", status: 200, data: products });
         }
