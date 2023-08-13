@@ -9,13 +9,15 @@ import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 const login = () => {
     const [signInWithEmailAndPassword, user, loading, error] =
         useSignInWithEmailAndPassword(auth);
+
     const router = useRouter();
+    const { callbackUrl } = router.query;
     const onFinish = async (values) => {
         await signInWithEmailAndPassword(values.email, values.password);
+        await router.push(
+            callbackUrl || "/"
+        );
     };
-    if (user) {
-        router.push("/");
-    }
     const onFinishFailed = (errorInfo) => {
         // console.log("Failed:", errorInfo);
     };
@@ -81,7 +83,8 @@ const login = () => {
                     onClick={() =>
                         signIn("google", {
                             callbackUrl:
-                                "https://pc-builder-saimameem.vercel.app",
+                                callbackUrl ||
+                                "https://pc-builder-alpha-two.vercel.app",
                         })
                     }
                 >

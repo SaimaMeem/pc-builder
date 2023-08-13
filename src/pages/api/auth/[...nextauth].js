@@ -9,7 +9,7 @@ export const authOptions = {
         }),
     ],
     pages:{
-        signIn: "/login"
+        signIn: "https://pc-builder-alpha-two.vercel.app/login"
     }
 };
 

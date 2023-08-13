@@ -1,6 +1,6 @@
 # PC Builder Website
 
-The [PC Builder Website](https://pc-builder-saimameem.vercel.app/) is a user-friendly platform developed with Next.js that enables users to assemble their personalized PCs. It includes a PC Builder tool, product categories, featured components, and authentication features for an enhanced experience.
+The [PC Builder Website](https://pc-builder-alpha-two.vercel.app/) is a user-friendly platform developed with Next.js that enables users to assemble their personalized PCs. It includes a PC Builder tool, product categories, featured components, and authentication features for an enhanced experience.
 
 
 ## Features
@@ -8,7 +8,7 @@ The [PC Builder Website](https://pc-builder-saimameem.vercel.app/) is a user-fri
 ### Authentication
 
 -   Google Authentication implemented with NextAuth.
--   Email-Password Authentication implemented with Firebase. (Use this email and password to login. Email: user@email.com, Password: 123456)
+-   Email-Password Authentication implemented with Firebase. (Use this email and password to login. Email: user@gmail.com, Password: 123456)
 -   Protected PC Builder page with user authentication using NextAuth.
 
 ### Navigation
