@@ -13,7 +13,6 @@ const login = () => {
     const onFinish = async (values) => {
         await signInWithEmailAndPassword(values.email, values.password);
     };
-    console.log(router?.query?.callbackUrl);
     if (user) {
         router.push(router?.query?.callbackUrl || "/");
     }
