@@ -14,10 +14,10 @@ const login = () => {
     const { callbackUrl } = router.query;
     const onFinish = async (values) => {
         await signInWithEmailAndPassword(values.email, values.password);
-        await router.push(
-            callbackUrl || "/"
-        );
     };
+    if (user) {
+        router.push(callbackUrl || "/");
+    }
     const onFinishFailed = (errorInfo) => {
         // console.log("Failed:", errorInfo);
     };

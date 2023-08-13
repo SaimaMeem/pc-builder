@@ -3,19 +3,21 @@ import { CaretDownOutlined } from "@ant-design/icons";
 import { Button, Layout, Menu } from "antd";
 import { signOut as nSignOut, useSession } from "next-auth/react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useAuthState, useSignOut } from "react-firebase-hooks/auth";
 const { Header, Content, Footer } = Layout;
 const RootLayout = ({ children }) => {
     const { data: session } = useSession();
     const [user, loading, error] = useAuthState(auth);
     const [signOut] = useSignOut(auth);
-
+    const router = useRouter();
     const logOut = async () => {
         if (session?.user) {
             await nSignOut();
         } else {
             await signOut();
         }
+        router.push("/");
     };
     const items = [
         {
@@ -66,7 +68,7 @@ const RootLayout = ({ children }) => {
                 },
                 {
                     label: <Link href={"/categories/others"}>Others</Link>,
-                    eventKey: "SubMenu7"
+                    eventKey: "SubMenu7",
                 },
             ],
         },
