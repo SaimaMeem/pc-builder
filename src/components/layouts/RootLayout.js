@@ -20,16 +20,17 @@ const RootLayout = ({ children }) => {
     const items = [
         {
             label: <Link href={"/"}>Home</Link>,
-            key: "",
+            eventKey: "Menu1",
         },
         {
             label: "Categories",
-            key: "SubMenu",
+            eventKey: "Menu2",
             children: [
                 {
                     label: (
                         <Link href={"/categories/cpu"}>CPU / Processor</Link>
                     ),
+                    eventKey: "SubMenu1",
                 },
                 {
                     label: (
@@ -37,9 +38,11 @@ const RootLayout = ({ children }) => {
                             Motherboard
                         </Link>
                     ),
+                    eventKey: "SubMenu2",
                 },
                 {
                     label: <Link href={"/categories/ram"}>RAM</Link>,
+                    eventKey: "SubMenu3",
                 },
                 {
                     label: (
@@ -47,6 +50,7 @@ const RootLayout = ({ children }) => {
                             Power Supply Unit
                         </Link>
                     ),
+                    eventKey: "SubMenu4",
                 },
                 {
                     label: (
@@ -54,12 +58,15 @@ const RootLayout = ({ children }) => {
                             Storage Device
                         </Link>
                     ),
+                    eventKey: "SubMenu5",
                 },
                 {
                     label: <Link href={"/categories/monitor"}>Monitor</Link>,
+                    eventKey: "SubMenu6",
                 },
                 {
                     label: <Link href={"/categories/others"}>Others</Link>,
+                    eventKey: "SubMenu7"
                 },
             ],
         },
@@ -69,6 +76,7 @@ const RootLayout = ({ children }) => {
                     PC Builder
                 </Button>
             ),
+            eventKey: "Menu3",
         },
     ];
     if (session?.user || user?.email) {
@@ -83,7 +91,7 @@ const RootLayout = ({ children }) => {
                     </span>
                 </div>
             ),
-            key: "SubMenu2",
+            key: "Menu4",
 
             children: [
                 {
@@ -96,6 +104,7 @@ const RootLayout = ({ children }) => {
                             Log Out
                         </Link>
                     ),
+                    eventKey: "Menu5",
                 },
             ],
         });
