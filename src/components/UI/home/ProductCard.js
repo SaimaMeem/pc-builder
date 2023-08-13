@@ -1,7 +1,7 @@
 import { Button, Card, Col } from "antd";
 import Image from "next/image";
 import Link from "next/link";
-const ProductCard = ({product}) => {
+const ProductCard = ({ product }) => {
     const { Meta } = Card;
     return (
         <Col
@@ -21,7 +21,7 @@ const ProductCard = ({product}) => {
                         src={product?.image}
                         width={350}
                         height={350}
-                        responsive="true"
+                        layout="responsive"
                         alt="product image"
                         className="p-6"
                     />

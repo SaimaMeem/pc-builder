@@ -13,14 +13,15 @@ const login = () => {
     const onFinish = async (values) => {
         await signInWithEmailAndPassword(values.email, values.password);
     };
+    console.log(router?.query?.callbackUrl);
     if (user) {
-        router.push("/");
+        router.push(router?.query?.callbackUrl || "/");
     }
     const onFinishFailed = (errorInfo) => {
         // console.log("Failed:", errorInfo);
     };
     return (
-        <div className="justify-center my-32 mx-auto sm:w-1/2 border-4 bg-[#F5F5F5]">
+        <div className="flex justify-center items-center my-32 w-full md:mx-auto md:w-[450px] border-4 bg-[#F5F5F5]">
             <div className="mx-16 md:mx-10">
                 <h1 className="font-semibold text-3xl text-center my-10">
                     Login
@@ -80,7 +81,7 @@ const login = () => {
                     className="flex justify-center items-center my-10 space-x-1 py-2 border-2 cursor-pointer hover:text-red-700 hover:rounded-lg hover:border-red-700 hover:ease-out hover:duration-500"
                     onClick={() =>
                         signIn("google", {
-                            callbackUrl: "http://localhost:3000/",
+                            callbackUrl: "http://localhost:3000",
                         })
                     }
                 >

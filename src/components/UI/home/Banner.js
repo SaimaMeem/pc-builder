@@ -15,6 +15,7 @@ const Banner = () => {
                     width={350}
                     height={350}
                     layout="responsive"
+                    priority={true}
                 ></Image>
             </div>
         </Carousel>
