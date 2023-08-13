@@ -5,31 +5,31 @@ const Categories = () => {
     const categories = [
         {
             label: "CPU / Processor",
-            link: "/cpu",
+            link: "categories/cpu",
         },
         {
             label: "Motherboard",
-            link: "/motherboard",
+            link: "categories/motherboard",
         },
         {
             label: "RAM",
-            link: "/ram",
+            link: "categories/ram",
         },
         {
             label: "Power Supply Unit",
-            link: "/power-supply-unit",
+            link: "categories/power-supply-unit",
         },
         {
             label: "Storage Device",
-            link: "/storage-device",
+            link: "categories/storage-device",
         },
         {
             label: "Monitor",
-            link: "/monitor",
+            link: "categories/monitor",
         },
         {
             label: "Others",
-            link: "/others",
+            link: "categories/others",
         },
     ];
     return (

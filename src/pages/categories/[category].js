@@ -28,11 +28,10 @@ Category.getLayout = function getLayout(page) {
 
 export const getServerSideProps = async (context) => {
     const { params } = context;
-    console.log(params);
     const res = await fetch(`${process.env.SERVER_URL}/products/`);
     const data = await res.json();
     const filteredData = data?.data.filter((product) =>
-        product.category.toLowerCase().includes(params.category)
+        product.category.toLowerCase().includes(params.category.replace(/-/g, ' '))
     );
     return {
         props: {
