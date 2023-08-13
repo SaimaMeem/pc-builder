@@ -5,7 +5,7 @@ The PC Builder Website is a user-friendly platform developed with Next.js that e
 
 ### Authentication
 - Google Authentication implemented with NextAuth.
-- Email-Password Authentication implemented with Firebase.
+- Email-Password Authentication implemented with Firebase. (Use this email and password to login. Email: user@email.com, Password: 123456)
 - Protected PC Builder page with user authentication using NextAuth.
 
 ### Navigation
