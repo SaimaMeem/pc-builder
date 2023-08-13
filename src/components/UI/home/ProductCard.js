@@ -5,7 +5,7 @@ const ProductCard = ({product}) => {
     const { Meta } = Card;
     return (
         <Col
-            key={product.id}
+            key={product._id}
             className="gutter-row py-5"
             span={6}
             xs={24}
@@ -45,7 +45,7 @@ const ProductCard = ({product}) => {
                         {product?.price}
                     </span>
                 </p>
-                <Link href={`/products/${product?.id}`}>
+                <Link href={`/products/${product?._id}`}>
                     <Button type="primary" className="mt-6">
                         View Details
                     </Button>

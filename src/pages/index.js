@@ -8,7 +8,7 @@ export default function Home({ products }) {
     return (
         <>
             <Head>
-                <title>PH-News Portal</title>
+                <title>PC Builder</title>
                 <meta
                     name="description"
                     content="This is a pc-builder website made using next-js"
@@ -31,12 +31,12 @@ Home.getLayout = function getLayout(page) {
 };
 
 export const getStaticProps = async () => {
-    const res = await fetch("http://localhost:5000/products/");
+    const res = await fetch("http://localhost:5000/products");
     const data = await res.json();
     return {
         props: {
-            products: data,
+            products: data.data,
         },
-        revalidate: 30 
+        revalidate: 30,
     };
 };

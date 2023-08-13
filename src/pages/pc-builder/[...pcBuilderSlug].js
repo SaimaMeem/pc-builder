@@ -42,7 +42,7 @@ export const getServerSideProps = async (context) => {
     const { params } = context;
     const res = await fetch(`http://localhost:5000/products/`);
     const data = await res.json();
-    const filteredData = data.filter((product) =>
+    const filteredData = data.data.filter((product) =>
         product.category
             .toLowerCase()
             .includes(convertToSpaceSeparated(params.pcBuilderSlug[0]))
