@@ -49,8 +49,6 @@ The [PC Builder Website](https://pc-builder-alpha-two.vercel.app/) is a user-fri
 
 ```
 npm run dev
-# or
-yarn dev
 ```
 
 4. Create a .env file in the project root and add your environment variables.
@@ -65,6 +63,4 @@ GITHUB_CLIENT_ID=your_github_client_id
 
 ```
 npm run dev
-# or
-yarn dev
 ```
